@@ -2,15 +2,51 @@
 
 A new Flutter project.
 
-## Getting Started
+## Folder Structure
 
-This project is a starting point for a Flutter application.
+The `lib` folder contains the main source code for the Flutter application. Below is an overview of the folder structure and the purpose of each directory and file.
 
-A few resources to get you started if this is your first Flutter project:
+### lib/
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **main.dart**: The entry point of the Flutter application.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### data/
+Contains data-related classes and files, such as models, repositories, and data providers.
+
+- **models/**: Contains data models.
+  - eg. `user.dart`: Defines the `User` model.
+- **provider/**: Contains data providers and repositories.
+  - `repository/`
+    - eg. `user_repository.dart`: Defines the `UserRepository` class for CRUD operations on user data.
+
+#### feature/
+Contains the UI screens of the application.
+
+- eg. **user_profile_view.dart**: Defines the user profile screen where users can view and update their profile information.
+
+#### widgets/
+Contains reusable UI components.
+
+- eg. **custom_rounded_button.dart**: Defines a custom rounded button widget used throughout the application.
+
+#### routes/
+  - Defines the routes used in navigation purpose.
+
+#### locator/
+ - For Dependancy injection
+
+#### utils/
+Contains utility classes and functions.
+
+- **app_string.dart**: Defines the string constants used in the application.
+
+#### theme/
+- **app_color.dart**: Defines the color palette used in the application.
+- **app_theme.dart**: Defines the theme used in the application.
+
+## Usage
+
+To run the application, use the following command:
+
+```sh
+flutter run
