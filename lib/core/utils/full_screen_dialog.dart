@@ -19,7 +19,7 @@ class FullscreenLoader {
                 canPop: false,
                 child: Center(
                   child: SpinKitCircle(
-                    color: AppColors.appColor,
+                    color: AppColors.primaryColor,
                     size: 50.0,
                   ),
                 ),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:softnet_school_portal/core/routes/routes_name.dart';
 import 'package:softnet_school_portal/core/utils/app_string.dart';
-import 'package:softnet_school_portal/core/utils/custome_snackbar.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -20,6 +19,9 @@ class _LoginViewState extends State<LoginView> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const TextField(
+                decoration: InputDecoration(hintText: 'Name'),
+              ),
               const Text(AppString.loginButton),
               ElevatedButton.icon(
                   onPressed: () {

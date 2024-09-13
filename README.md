@@ -49,4 +49,5 @@ Contains utility classes and functions.
 To run the application, use the following command:
 
 ```sh
+flutter pub get
 flutter run

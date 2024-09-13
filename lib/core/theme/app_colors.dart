@@ -4,12 +4,11 @@ class AppColors {
   static const Color primaryColor = Color(0xFFBB86FC);
   static const Color primaryColorDark = Color(0xFF9065F4);
 
-  static const Color backgroundColorDark = Color(0xFF141A31);
-  static const Color appBarColorDark = Color(0xFF1E2A4A);
-  static const Color backgroundColorLight = Color(0xFFFFFFFC);
-  static const Color appBarColorLight = Color(0xFFE9E9E6);
+  static const Color bgDark = Color(0xFF212332);
+  static const Color bgLight = Color(0xFFE9E9E6);
+  static const Color secondaryDark = Color(0xFF2A2D3E);
+  static const Color secondaryLight = Color(0xFFFFFFFC);
 
-  static const Color appColor = Color(0xFF925BAE);
   static const borderColor = Color(0xFF1E2A4A);
   static const whiteColor = Colors.white;
   static const completedColor = Color(0xFF4CAF50);

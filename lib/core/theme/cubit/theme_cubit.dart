@@ -12,7 +12,7 @@ class ThemeCubit extends Cubit<ThemeState> {
 
   void toggoleTheme(AppTheme appTheme) async {
     emit(ThemeState(theme: appThemesData[appTheme]!));
-    _storageService.setData('theme', appTheme);
+    _storageService.setData('theme', appTheme.toString());
   }
 
   Future<void> _loadTheme() async {

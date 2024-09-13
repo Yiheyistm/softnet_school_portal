@@ -8,8 +8,8 @@ import 'package:softnet_school_portal/core/utils/app_string.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  DependancyInjection.init();
   await GetStorage.init();
+  DependancyInjection.init();
   runApp(const MyApp());
 }
 
