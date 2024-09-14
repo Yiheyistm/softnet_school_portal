@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:softnet_school_portal/core/theme/app_colors.dart';
 import 'package:softnet_school_portal/core/utils/fonts/app_fonts.dart';
 
@@ -11,6 +10,7 @@ final Map<AppTheme, ThemeData> appThemesData = {
       scaffoldBackgroundColor: AppColors.bgLight,
     dividerColor: AppColors.dividerColor,
       canvasColor: AppColors.secondaryLight,
+      shadowColor: AppColors.greyColor,
     textTheme: TextTheme(
       displayLarge: AppFonts.headline3,
       titleLarge: AppFonts.headline6,
@@ -22,7 +22,7 @@ final Map<AppTheme, ThemeData> appThemesData = {
       inputDecorationTheme: const InputDecorationTheme(
         contentPadding: EdgeInsets.all(12),
         filled: true,
-        fillColor: Color(0xFFD9D9D9),
+        fillColor: Color.fromARGB(255, 230, 228, 228),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -40,6 +40,7 @@ final Map<AppTheme, ThemeData> appThemesData = {
     primaryColor: AppColors.primaryColorDark,
       scaffoldBackgroundColor: AppColors.bgDark,
       canvasColor: AppColors.secondaryDark,
+      shadowColor: AppColors.blackColor,
     dividerColor: const Color(0xFF424242),
     textTheme: TextTheme(
       displayLarge: AppFonts.headline3.copyWith(color: AppColors.whiteColor),

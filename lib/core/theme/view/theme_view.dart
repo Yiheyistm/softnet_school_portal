@@ -15,10 +15,10 @@ class _ThemeViewState extends State<ThemeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Theme'),
-        backgroundColor: Theme.of(context).canvasColor,
-      ),
+      // appBar: AppBar(
+      //   title: const Text('Theme'),
+      //   backgroundColor: Theme.of(context).canvasColor,
+      // ),
       body: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
           return Padding(

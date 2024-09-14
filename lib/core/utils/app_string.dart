@@ -7,6 +7,8 @@ class AppString {
   static const firstName = 'First Name';
   static const lastName = 'Last Name';
   static const required = '* This field is required';
+  static const adminPortal = 'Welcome To Admin Portal';
+  static const loginToYourAccount = 'Login your account';
   static const provideValidName = 'Provide Valid Name';
   static const provideValidEmail = 'Provide valid email';
   static const provideValidPassword = 'Provide valid password';
