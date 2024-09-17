@@ -144,7 +144,7 @@ class _LoginViewState extends State<LoginView> {
                               color: AppColors.primaryColorDark,
                               name: AppString.loginButton,
                               onTap: () {
-                                context.pushNamed(RouteName.theme);
+                                context.pushNamed(RouteName.main);
                                 // if (_adminLoginFormKey.currentState!
                                 //     .validate()) {
                                 // }

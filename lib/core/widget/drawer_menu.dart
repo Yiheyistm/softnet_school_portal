@@ -22,25 +22,26 @@ class _SideMenuState extends State<SideMenu> {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.zero),
-      ),
-      child: SingleChildScrollView(
-        child: Container(
-          margin: EdgeInsets.only(right: defaultPadding),
-          padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-          decoration: BoxDecoration(
-              color: Theme.of(context).canvasColor,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: Theme.of(context).shadowColor.withOpacity(0.8),
-                  blurRadius: 10,
-                  offset: const Offset(0.4, 0.4),
-                ),
-              ]),
+    return Container(
+      padding: EdgeInsets.symmetric(
+              horizontal: defaultPadding / 2, vertical: defaultPadding)
+          .copyWith(top: 0),
+      margin: EdgeInsets.only(right: defaultPadding),
+      decoration: BoxDecoration(
+          color: Theme.of(context).canvasColor,
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: Theme.of(context).shadowColor.withOpacity(0.8),
+              blurRadius: 10,
+              spreadRadius: 5,
+              offset: const Offset(0.4, 0.4),
+            ),
+          ]),
+      child: Drawer(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        child: SingleChildScrollView(
           child: Column(
             children: [
               SizedBox(
@@ -120,7 +121,7 @@ class _SideMenuState extends State<SideMenu> {
                 index: 5,
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.14,
+                height: MediaQuery.of(context).size.height * 0.12,
               ),
               drawerListTile(
                   title: 'Logout',

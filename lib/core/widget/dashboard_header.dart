@@ -18,9 +18,9 @@ class DashboardHeader extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
-            color: Theme.of(context).shadowColor.withOpacity(0.8),
+            color: Theme.of(context).primaryColor.withOpacity(0.8),
             blurRadius: 10,
-            offset: const Offset(0.4, 0),
+            offset: const Offset(0.4, 0.4),
           ),
         ],
       ),
@@ -46,7 +46,7 @@ class DashboardHeader extends StatelessWidget {
                       padding:
                           EdgeInsets.symmetric(horizontal: defaultPadding / 2),
                       child: SvgPicture.asset(
-                        logoutIcon,
+                        searchIcon,
                         width: 15,
                         height: 15,
                         colorFilter: ColorFilter.mode(
@@ -61,13 +61,19 @@ class DashboardHeader extends StatelessWidget {
           const Spacer(
             flex: 3,
           ),
-          SvgPicture.asset(
-            bellIcon,
-            height: 25,
-            width: 25,
-            colorFilter: ColorFilter.mode(
-                Theme.of(context).textTheme.bodyMedium!.color!,
-                BlendMode.srcIn),
+          IconButton(
+            onPressed: () {},
+            icon: Badge.count(
+              count: 3,
+              child: SvgPicture.asset(
+                bellIcon,
+                height: 25,
+                width: 25,
+                colorFilter: ColorFilter.mode(
+                    Theme.of(context).textTheme.bodyMedium!.color!,
+                    BlendMode.srcIn),
+              ),
+            ),
           ),
           SizedBox(
             width: defaultPadding,
