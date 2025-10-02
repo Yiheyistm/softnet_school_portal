@@ -5,7 +5,7 @@ import 'package:softnet_school_portal/core/feature/dashboard/components/legend_b
 import 'package:softnet_school_portal/core/feature/dashboard/components/line_chart.dart';
 import 'package:softnet_school_portal/core/feature/dashboard/components/split_card.dart';
 import 'package:softnet_school_portal/core/feature/dashboard/components/double_vertical_bar_chart_card.dart';
-import 'package:softnet_school_portal/core/feature/dashboard/components/vbr2.dart';
+import 'package:softnet_school_portal/core/feature/dashboard/components/line_vertical_bar_chart.dart';
 import 'package:softnet_school_portal/core/utils/constants.dart';
 import 'package:softnet_school_portal/data/model/pie_chart_section_data_model.dart';
 
